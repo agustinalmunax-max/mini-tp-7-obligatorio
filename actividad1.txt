@@ -1,0 +1,19 @@
+1. Es importante validar datos de modo especifico para asegurar que el programa no produzca errores. Es ideal
+validar datos, pues es el modo que tiene el programa de confirmar la informacion y el tipo de informacion que
+el programa espera recibir. De otro modo, el programa podria recibir cualquier tipo de dato y no tendria coherencia
+con el tipo de informacion que este mismo necesita para funcionar correctamente.
+
+2."strip()" toma los caracteres que se le proporcionen para luego eliminarlos al principio y al 
+final de palabras o textos.
+por otro lado, "split()" se utiliza para dividir palabras dentro de textos o conjuntos, basandose en un separador
+que se le proporcione (por ejemplo: comas, punto y comas, guión bajo, etc)
+
+3. "count" cuenta y confirma la cantidad de veces que un dato aparece. por ejemplo, si realizamos un count
+similar a este: "count(',')", estaremos contando la cantidad de veces que la coma aparece dentro de una linea
+de texto.
+es importante pues sirve para determinar y confirmar si lo que esperamos de la estructura de una linea se cumple.
+
+4. Los espacios hacen que la validacion de un texto tenga errores. Al comparar dos datos que contienen lo mismo
+pero tienen diferencias que parecen minimas (como en este caso, los espacios al inicio y al final de una palabra o
+un texto), generara errores y el programa no podria validar el dato que se le proporciona pues falla en la
+comparación.
