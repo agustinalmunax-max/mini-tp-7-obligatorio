@@ -1,0 +1,34 @@
+linea = " mara ; programacion ; 8 "
+
+partes = linea.split(";")
+nombre = partes[0].strip().capitalize()
+materia = partes[1].strip().capitalize()
+nota_texto = partes[2].strip()
+
+if nota_texto.isnumeric():
+    nota = int(nota_texto)
+    print(f"{nombre} cursa {materia} y obtuvo {nota}")
+else:
+    print("La nota no es valida")
+
+
+1. En "partes" queda el mismo conjunto de datos que aparece al inicio, pero el transformados en lista. ya que
+las modificaciones de datos como "split()" separan los datos y los meten en una lista, mientras que el resto
+de el codigo se encarga de editar esta misma información dentro de la lista (como "strip()" eliminando los
+caracteres no deseados de los extremos de los datos o "capitalize()" poniendo en mayuscula el primer caracter y el 
+resto en minusculas, en los datos que son strings).
+
+2. Se usa strip para eliminar primero los caracteres no deseados de los extremos y asi, asegurar que el 
+capitalize funcione correcctamente, de otro modo, capitalize solo modificaria los espacios (que tomaria como
+primeros caracteres dentro de los datos), y no afectaria en nada a palabras como "progracion".
+
+3. El dato que se valida antes de ser modificado es "nota_texto" pues primero pasa por ".isnumeric()" para
+determinar si el valor de el dato es numerico y luego verifica si se iguala "nota" a un int. Esto se hace 
+para verificar si nota_texto puede igualarse o entrar dentro de el valor de un int (valor numerico), y asi el 
+programa determina que la nota si es valida (como señala el if).
+En resumen: el isnumeric devuelve un booleano confirmado si el dato es o no es int (True o False). en este caso
+como el valor efectivamente es numerico (True), el proceso puede continuar.
+
+4. el programa imprimiria "La nota no es valida", pues al pasar por el ".isnumeric()", el programa no determinaria un
+dato con valor numerico, sino un string y por tanto, la nota no igualaria al int(nota_texto) (no se igualan ya
+que uno es un string y el otro un int).
