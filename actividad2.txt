@@ -1,4 +1,3 @@
-``````python
 linea = " mara ; programacion ; 8 "
 
 partes = linea.split(";")
@@ -11,7 +10,6 @@ if nota_texto.isnumeric():
     print(f"{nombre} cursa {materia} y obtuvo {nota}")
 else:
     print("La nota no es valida")
-``````
 
 1. En "partes" queda el mismo conjunto de datos que aparece al inicio, pero el transformados en lista. ya que
 las modificaciones de datos como "split()" separan los datos y los meten en una lista, mientras que el resto
